@@ -1,12 +1,4 @@
-/* eslint-disable */
-
-import "bootstrap";
-import "./style.css";
-
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
-
-document.getElementById("generate-btn").addEventListener("click", function() {
+function generateExcuse() {
   var excuses = [
     "Mi perro se comió mi tarea",
     "Olvidé mi libro en casa",
@@ -17,8 +9,8 @@ document.getElementById("generate-btn").addEventListener("click", function() {
     "Olvidé la contraseña de mi cuenta",
     "Tuve que llevar a mi hermano al médico",
     "Mi auto se descompuso en el camino",
-    "Tuve una emergencia en casa"
+    "Tuve una emergencia en casa",
   ];
   var randomIndex = Math.floor(Math.random() * excuses.length);
   document.getElementById("excuse").innerHTML = excuses[randomIndex];
-});
+}
